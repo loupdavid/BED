@@ -98,7 +98,7 @@ volatile uint8_t serial_rx_size;
 void tx(char cmd[])
 {
   int i; 
-  cc2500_utx(cmd,strlen(cmd));
+  cc2500_utx(cmd,strlen(cmd)+1);
   printf("\ntx send msg : %s \n",cmd);
 }
 

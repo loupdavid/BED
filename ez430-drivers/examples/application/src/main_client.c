@@ -175,6 +175,7 @@ void rx(void)
 	{
 	  execcmd(&buffer_rx_msg);
 	  printf(" -- paquet %d, emetteur %d, %d dBm\n\r",i++, buffer_rx_msg[0], buffer_rx_rssi);
+	  printf("%s \n", buffer_rx_msg);
 	  buffer_rx_flag = 0;
 	  if (tstart == 0)
 	    {
