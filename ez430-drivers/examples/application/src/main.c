@@ -94,11 +94,21 @@ int serial_cb(unsigned char data)
 void execcmd(char cmd[]){
   
   if(strcmp(cmd, "test") == 0){
-    printf("\nhello world\n");
+    printf("\nHello World");
+  }
+  else if(strcmp(cmd, "help") == 0){
+    printf("\ntest   : Hello World\ngreen led on : Turn green led on\ngreen led on : Turn green led off\n");
+  }
+  else if(strcmp(cmd, "green led on") == 0){
+    led_green_on();
+  }
+  else if(strcmp(cmd, "green led off") == 0){
+    led_green_off();
   }
   else{
-    printf("\nCommande inconnue\n");
+    printf("\nCommande inconnue : help for help");
   }
+  printf("\n");
 }
 
 int main(void)
@@ -142,7 +152,6 @@ int main(void)
         }
         i=0;
       }
-      led_green_switch();
     }
     else
     {
