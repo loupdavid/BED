@@ -59,9 +59,9 @@ void serial_ring_put(uint8_t data)
   }
   else
   {
-    /* 
-     * if (serial_rx_size == SERIAL_RX_FIFO_SIZE) 
-     * we get a rx_overflow 
+    /*
+     * if (serial_rx_size == SERIAL_RX_FIFO_SIZE)
+     * we get a rx_overflow
      */
   }
 }
@@ -92,12 +92,12 @@ int serial_cb(unsigned char data)
 }
 
 void execcmd(char cmd[]){
-  
+
   if(strcmp(cmd, "test") == 0){
-    printf("\nHello World");
+    printf("\n\rHello World");
   }
   else if(strcmp(cmd, "help") == 0){
-    printf("\ntest   : Hello World\ngreen led on : Turn green led on\ngreen led on : Turn green led off\n");
+    printf("\n\rtest   : Hello World\n\rgreen led on : Turn green led on\n\rgreen led off : Turn green led off\n\r");
   }
   else if(strcmp(cmd, "green led on") == 0){
     led_green_on();
@@ -106,9 +106,9 @@ void execcmd(char cmd[]){
     led_green_off();
   }
   else{
-    printf("\nCommande inconnue : help for help");
+    printf("\n\rCommande inconnue : help for help");
   }
-  printf("\n");
+  printf("\n\r");
 }
 
 int main(void)
@@ -129,7 +129,7 @@ int main(void)
   serial_ring_init();
   uart_register_cb( serial_cb);
 
-  printf("serial test application: echo\n");
+  printf("serial test application: echo\n\r");
   led_green_on();
   eint();
 
