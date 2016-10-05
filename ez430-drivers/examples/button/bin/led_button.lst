@@ -1,0 +1,1085 @@
+
+bin/led_button.elf:     file format elf32-msp430
+
+SYMBOL TABLE:
+00008000 l    d  .text	00000000 .text
+000087b4 l    d  .rodata	00000000 .rodata
+00000200 l    d  .bss	00000000 .bss
+00000208 l    d  .noinit	00000000 .noinit
+0000ffe0 l    d  .vectors	00000000 .vectors
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    df *ABS*	00000000 main.c
+00008082 l       .text	00000000 __br_unexpected_
+00000000 l    df *ABS*	00000000 clock.c
+00000200 l     O .bss	00000002 mclk_freq_mhz
+000080aa l     F .text	000000c0 set_mcu_speed
+00000000 l    df *ABS*	00000000 leds.c
+00000000 l    df *ABS*	00000000 uart.c
+00000202 l     O .bss	00000002 uart_cb
+00000000 l    df *ABS*	00000000 button.c
+00000204 l     O .bss	00000002 cb
+00000000 l    df *ABS*	00000000 watchdog.c
+00000206 l     O .bss	00000002 watchdog_backup
+00000000 l    df *ABS*	00000000 puts.c
+0000851c g     F .text	00000032 putchar
+00000057 g       *ABS*	00000000 __BCSCTL1
+00008214 g     F .text	00000014 set_mcu_speed_dco_mclk_16MHz_smclk_16MHz
+00000174 g       *ABS*	00000000 __TACCR1
+00000000 g       *ABS*	00000000 __data_size
+00008082  w      .text	00000000 __isr_14
+00000128 g       *ABS*	00000000 __FCTL1
+000081ec g     F .text	00000014 set_mcu_speed_dco_mclk_12MHz_smclk_3MHz
+00000024 g       *ABS*	00000000 __P1IES
+0000004b g       *ABS*	00000000 __ADC10AE1
+00000069 g       *ABS*	00000000 __UCB0CTL1
+00008082  w      .text	00000000 __isr_4
+00000002 g       *ABS*	00000000 __IFG1
+00000060 g       *ABS*	00000000 __UCA0CTL0
+0000818e g     F .text	00000012 set_mcu_speed_dco_mclk_8MHz_smclk_4MHz
+0000012e g       *ABS*	00000000 __TAIV
+00008512 g     F .text	0000000a uart_stop
+00008612 g     F .text	0000005c button_init
+00000000 g       .vectors	00000000 _efartext
+00000001 g       *ABS*	00000000 __IE2
+0000002b g       *ABS*	00000000 __P2IFG
+0000001a g       *ABS*	00000000 __P3DIR
+000087c6 g       *ABS*	00000000 _etext
+00000190 g       *ABS*	00000000 __TBR
+000010f8 g       *ABS*	00000000 __CALDCO_16MHZ
+0000001d g       *ABS*	00000000 __P4OUT
+00000008 g       *ABS*	00000000 __bss_size
+000010fd g       *ABS*	00000000 __CALBC1_8MHZ
+00008264 g     F .text	00000010 loop_4_cycles
+00008000  w      .text	00000000 __watchdog_support
+0000807c  w      .text	00000000 __stop_progExec__
+0000002d g       *ABS*	00000000 __P2IE
+00008786 g     F .text	0000002c puts
+0000856c g     F .text	00000014 uart_eint
+00000192 g       *ABS*	00000000 __TBCCR0
+00008082  w      .text	00000000 __isr_11
+00000186 g       *ABS*	00000000 __TBCCTL2
+000081d8 g     F .text	00000014 set_mcu_speed_dco_mclk_12MHz_smclk_6MHz
+00000025 g       *ABS*	00000000 __P1IE
+0000006b g       *ABS*	00000000 __UCB0BR1
+00000049 g       *ABS*	00000000 __ADC10DTC1
+00000066 g       *ABS*	00000000 __UCA0RXBUF
+00000061 g       *ABS*	00000000 __UCA0CTL1
+000081b2 g     F .text	00000012 set_mcu_speed_dco_mclk_8MHz_smclk_1MHz
+0000823c g     F .text	00000014 set_mcu_speed_dco_mclk_16MHz_smclk_4MHz
+00000182 g       *ABS*	00000000 __TBCCTL0
+00008086 g     F .text	00000016 button_pressed_cb
+0000006d g       *ABS*	00000000 __UCB0STAT
+00008082  w      .text	00000000 __isr_5
+00000063 g       *ABS*	00000000 __UCA0BR1
+000087c6 g       *ABS*	00000000 __data_load_start
+0000843a g     F .text	00000016 leds_on
+00008082 g       .text	00000000 __dtors_end
+00000053 g       *ABS*	00000000 __BCSCTL3
+000083d2 g     F .text	00000014 led_green_switch
+000001bc g       *ABS*	00000000 __ADC10SA
+00000166 g       *ABS*	00000000 __TACCTL2
+00000065 g       *ABS*	00000000 __UCA0STAT
+000083a8 g     F .text	00000016 led_green_off
+00008712 g       .text	00000000 __isr_2
+00000160 g       *ABS*	00000000 __TACTL
+0000012c g       *ABS*	00000000 __FCTL3
+00008082  w      .text	00000000 __isr_10
+0000809c g     F .text	0000000e get_mclk_freq_mhz
+0000002e g       *ABS*	00000000 __P2SEL
+00000180 g       *ABS*	00000000 __TBCTL
+000081a0 g     F .text	00000012 set_mcu_speed_dco_mclk_8MHz_smclk_2MHz
+000010f9 g       *ABS*	00000000 __CALBC1_16MHZ
+000000c3 g       *ABS*	00000000 __OA1CTL1
+00000023 g       *ABS*	00000000 __P1IFG
+000010fb g       *ABS*	00000000 __CALBC1_12MHZ
+0000004a g       *ABS*	00000000 __ADC10AE0
+0000011a g       *ABS*	00000000 __UCB0I2CSA
+000083fc g     F .text	00000014 led_red_on
+00000172 g       *ABS*	00000000 __TACCR0
+00008424 g     F .text	00000016 leds_off
+00000056 g       *ABS*	00000000 __DCOCTL
+00000003 g       *ABS*	00000000 __IFG2
+00000208 g     O .noinit	00000002 __wdt_clear_value
+0000854e g     F .text	0000001e uart_getchar
+0000001b g       *ABS*	00000000 __P3SEL
+000085be g       .text	00000000 __isr_7
+0000ffe0 g     O .vectors	00000020 __ivtbl_16
+000086fc g     F .text	00000016 button_disable_interrupt
+0000006c g       *ABS*	00000000 __UCB0I2CIE
+0000006a g       *ABS*	00000000 __UCB0BR0
+00000028 g       *ABS*	00000000 __P2IN
+00008712 g     F .text	00000042 port1_irq_handler
+00000118 g       *ABS*	00000000 __UCB0I2COA
+00000184 g       *ABS*	00000000 __TBCCTL1
+000001b4 g       *ABS*	00000000 __ADC10MEM
+000083e6 g     F .text	00000016 led_red_off
+00008082  w      .text	00000000 __isr_0
+00000029 g       *ABS*	00000000 __P2OUT
+0000012a g       *ABS*	00000000 __FCTL2
+00000064 g       *ABS*	00000000 __UCA0MCTL
+00008482 g     F .text	00000090 uart_init
+00008028  w      .text	00000000 __do_clear_bss
+00008580 g     F .text	00000016 uart_dint
+00000021 g       *ABS*	00000000 __P1OUT
+0000002c g       *ABS*	00000000 __P2IES
+00000026 g       *ABS*	00000000 __P1SEL
+00008228 g     F .text	00000014 set_mcu_speed_dco_mclk_16MHz_smclk_8MHz
+00008754 g     F .text	0000001c watchdog_stop
+0000816a g     F .text	00000012 set_mcu_speed_dco_mclk_1MHz_smclk_1MHz
+00008200 g     F .text	00000014 set_mcu_speed_dco_mclk_12MHz_smclk_1_5MHz
+00000027 g       *ABS*	00000000 __P1REN
+00008596 g     F .text	00000028 uart_register_cb
+000000c0 g       *ABS*	00000000 __OA0CTL0
+00008250 g     F .text	00000014 set_mcu_speed_dco_mclk_16MHz_smclk_2MHz
+000087b2  w      .text	00000000 _unexpected_
+00008082  w      .text	00000000 __isr_8
+00008082  w      .text	00000000 __isr_3
+00008410 g     F .text	00000014 led_red_switch
+000010fc g       *ABS*	00000000 __CALDCO_8MHZ
+00008000  w      .text	00000000 _reset_vector__
+00008082 g       .text	00000000 __ctors_start
+00008082  w      .text	00000000 __isr_12
+000010fa g       *ABS*	00000000 __CALDCO_12MHZ
+00000018 g       *ABS*	00000000 __P3IN
+00008010  w      .text	00000000 __do_copy_data
+000086b4 g     F .text	0000001c button_is_pressed
+00000200 g       .bss	00000000 __bss_start
+0000803e g     F .text	0000003e main
+00000176 g       *ABS*	00000000 __TACCR2
+0000831a g     F .text	0000008e delay_ms
+000000c2 g       *ABS*	00000000 __OA1CTL0
+00008082  w      .text	00000000 __isr_13
+00008274 g     F .text	000000a6 delay_usec
+00000170 g       *ABS*	00000000 __TAR
+0000001e g       *ABS*	00000000 __P4DIR
+000085be g     F .text	00000054 usart0irq
+00000162 g       *ABS*	00000000 __TACCTL0
+00010000 g       .vectors	00000000 _vectors_end
+0000002a g       *ABS*	00000000 __P2DIR
+00000068 g       *ABS*	00000000 __UCB0CTL0
+0000002f g       *ABS*	00000000 __P2REN
+0000006e g       *ABS*	00000000 __UCB0RXBUF
+000001b0 g       *ABS*	00000000 __ADC10CTL0
+00008082  w      .text	00000000 __isr_9
+0000005e g       *ABS*	00000000 __UCA0IRTCTL
+000010fe g       *ABS*	00000000 __CALDCO_1MHZ
+00000067 g       *ABS*	00000000 __UCA0TXBUF
+0000800c  w      .text	00000000 __init_stack
+0000005d g       *ABS*	00000000 __UCA0ABCTL
+00000019 g       *ABS*	00000000 __P3OUT
+000000c1 g       *ABS*	00000000 __OA0CTL1
+000081c4 g     F .text	00000014 set_mcu_speed_dco_mclk_12MHz_smclk_12MHz
+00008082 g       .text	00000000 __dtors_start
+00008082  w      .text	00000000 __isr_6
+00008082 g       .text	00000000 __ctors_end
+00000062 g       *ABS*	00000000 __UCA0BR0
+00000600 g       *ABS*	00000000 __stack
+0000817c g     F .text	00000012 set_mcu_speed_dco_mclk_8MHz_smclk_8MHz
+00008082  w      .text	00000000 __isr_1
+000086e8 g     F .text	00000014 button_enable_interrupt
+00000200 g       .rodata	00000000 _edata
+0000020a g       *ABS*	00000000 _end
+00000194 g       *ABS*	00000000 __TBCCR1
+00000048 g       *ABS*	00000000 __ADC10DTC0
+0000011e g       *ABS*	00000000 __TBIV
+000001b2 g       *ABS*	00000000 __ADC10CTL1
+000083be g     F .text	00000014 led_green_on
+00008770 g     F .text	00000016 watchdog_restore
+00000058 g       *ABS*	00000000 __BCSCTL2
+0000807c  w      .text	00000000 _endless_loop__
+0000001f g       *ABS*	00000000 __P4SEL
+00000196 g       *ABS*	00000000 __TBCCR2
+000086d0 g     F .text	00000018 button_register_cb
+00000022 g       *ABS*	00000000 __P1DIR
+0000866e g     F .text	00000046 button_stop
+0000005f g       *ABS*	00000000 __UCA0IRRCTL
+00000010 g       *ABS*	00000000 __P3REN
+00000164 g       *ABS*	00000000 __TACCTL1
+0000006f g       *ABS*	00000000 __UCB0TXBUF
+000010ff g       *ABS*	00000000 __CALBC1_1MHZ
+00008010  w      .text	00000000 __low_level_init
+00000011 g       *ABS*	00000000 __P4REN
+00000200 g       .rodata	00000000 __data_start
+00000120 g       *ABS*	00000000 __WDTCTL
+00000000 g       *ABS*	00000000 __IE1
+00000020 g       *ABS*	00000000 __P1IN
+0000001c g       *ABS*	00000000 __P4IN
+00008450 g     F .text	00000032 leds_init
+
+
+
+Disassembly of section .text:
+
+00008000 <__watchdog_support>:
+    8000:	55 42 20 01 	mov.b	&0x0120,r5	
+    8004:	35 d0 08 5a 	bis	#23048,	r5	;#0x5a08
+    8008:	82 45 08 02 	mov	r5,	&0x0208	
+
+0000800c <__init_stack>:
+    800c:	31 40 00 06 	mov	#1536,	r1	;#0x0600
+
+00008010 <__do_copy_data>:
+    8010:	3f 40 00 00 	mov	#0,	r15	;#0x0000
+    8014:	0f 93       	tst	r15		
+    8016:	08 24       	jz	$+18     	;abs 0x8028
+    8018:	92 42 08 02 	mov	&0x0208,&0x0120	
+    801c:	20 01 
+    801e:	2f 83       	decd	r15		
+    8020:	9f 4f c6 87 	mov	-30778(r15),512(r15);0x87c6(r15), 0x0200(r15)
+    8024:	00 02 
+    8026:	f8 23       	jnz	$-14     	;abs 0x8018
+
+00008028 <__do_clear_bss>:
+    8028:	3f 40 08 00 	mov	#8,	r15	;#0x0008
+    802c:	0f 93       	tst	r15		
+    802e:	07 24       	jz	$+16     	;abs 0x803e
+    8030:	92 42 08 02 	mov	&0x0208,&0x0120	
+    8034:	20 01 
+    8036:	1f 83       	dec	r15		
+    8038:	cf 43 00 02 	mov.b	#0,	512(r15);r3 As==00, 0x0200(r15)
+    803c:	f9 23       	jnz	$-12     	;abs 0x8030
+
+0000803e <main>:
+  led_green_switch();
+}
+
+
+int main(void)
+{
+    803e:	04 41       	mov	r1,	r4	
+    8040:	24 53       	incd	r4		
+    watchdog_stop();
+    8042:	b0 12 54 87 	call	#0x8754	
+    
+    /* button init */
+    button_init();
+    8046:	b0 12 12 86 	call	#0x8612	
+    button_register_cb(button_pressed_cb);
+    804a:	3f 40 86 80 	mov	#-32634,r15	;#0x8086
+    804e:	b0 12 d0 86 	call	#0x86d0	
+
+    set_mcu_speed_dco_mclk_8MHz_smclk_1MHz();
+    8052:	b0 12 b2 81 	call	#0x81b2	
+    uart_init(UART_9600_SMCLK_8MHZ);
+    8056:	3f 42       	mov	#8,	r15	;r2 As==11
+    8058:	b0 12 82 84 	call	#0x8482	
+    leds_init();
+    805c:	b0 12 50 84 	call	#0x8450	
+
+    led_red_off();
+    8060:	b0 12 e6 83 	call	#0x83e6	
+    led_green_off();
+    8064:	b0 12 a8 83 	call	#0x83a8	
+    
+    button_enable_interrupt();
+    8068:	b0 12 e8 86 	call	#0x86e8	
+     __enable_interrupt();
+    806c:	32 d2       	eint			
+     
+    for(;;)
+    {
+        delay_ms(1000);
+    806e:	3f 40 e8 03 	mov	#1000,	r15	;#0x03e8
+    8072:	b0 12 1a 83 	call	#0x831a	
+        led_red_switch();
+    8076:	b0 12 10 84 	call	#0x8410	
+    }
+    807a:	f9 3f       	jmp	$-12     	;abs 0x806e
+
+0000807c <__stop_progExec__>:
+    807c:	32 d0 f0 00 	bis	#240,	r2	;#0x00f0
+    8080:	fd 3f       	jmp	$-4      	;abs 0x807c
+
+00008082 <__ctors_end>:
+    8082:	30 40 b2 87 	br	#0x87b2	
+
+00008086 <button_pressed_cb>:
+#define ID 1
+
+
+
+void button_pressed_cb()
+{
+    8086:	04 12       	push	r4		
+    8088:	04 41       	mov	r1,	r4	
+    808a:	24 53       	incd	r4		
+  printf("-- button pressed\n"); 
+    808c:	3f 40 b4 87 	mov	#-30796,r15	;#0x87b4
+    8090:	b0 12 86 87 	call	#0x8786	
+  led_green_switch();
+    8094:	b0 12 d2 83 	call	#0x83d2	
+}
+    8098:	34 41       	pop	r4		
+    809a:	30 41       	ret			
+
+0000809c <get_mclk_freq_mhz>:
+    809c:	04 12       	push	r4		
+    809e:	04 41       	mov	r1,	r4	
+    80a0:	24 53       	incd	r4		
+    80a2:	1f 42 00 02 	mov	&0x0200,r15	
+    80a6:	34 41       	pop	r4		
+    80a8:	30 41       	ret			
+
+000080aa <set_mcu_speed>:
+    80aa:	04 12       	push	r4		
+    80ac:	04 41       	mov	r1,	r4	
+    80ae:	24 53       	incd	r4		
+    80b0:	21 83       	decd	r1		
+    80b2:	c4 4f fc ff 	mov.b	r15,	-4(r4)	;0xfffc(r4)
+    80b6:	c4 4e fd ff 	mov.b	r14,	-3(r4)	;0xfffd(r4)
+    80ba:	5f 44 fc ff 	mov.b	-4(r4),	r15	;0xfffc(r4)
+    80be:	3f 92       	cmp	#8,	r15	;r2 As==11
+    80c0:	16 24       	jz	$+46     	;abs 0x80ee
+    80c2:	3f 90 09 00 	cmp	#9,	r15	;#0x0009
+    80c6:	03 34       	jge	$+8      	;abs 0x80ce
+    80c8:	1f 93       	cmp	#1,	r15	;r3 As==01
+    80ca:	08 24       	jz	$+18     	;abs 0x80dc
+    80cc:	2b 3c       	jmp	$+88     	;abs 0x8124
+    80ce:	3f 90 0c 00 	cmp	#12,	r15	;#0x000c
+    80d2:	16 24       	jz	$+46     	;abs 0x8100
+    80d4:	3f 90 10 00 	cmp	#16,	r15	;#0x0010
+    80d8:	1c 24       	jz	$+58     	;abs 0x8112
+    80da:	24 3c       	jmp	$+74     	;abs 0x8124
+    80dc:	5f 42 ff 10 	mov.b	&0x10ff,r15	
+    80e0:	c2 4f 57 00 	mov.b	r15,	&0x0057	
+    80e4:	5f 42 fe 10 	mov.b	&0x10fe,r15	
+    80e8:	c2 4f 56 00 	mov.b	r15,	&0x0056	
+    80ec:	1b 3c       	jmp	$+56     	;abs 0x8124
+    80ee:	5f 42 fd 10 	mov.b	&0x10fd,r15	
+    80f2:	c2 4f 57 00 	mov.b	r15,	&0x0057	
+    80f6:	5f 42 fc 10 	mov.b	&0x10fc,r15	
+    80fa:	c2 4f 56 00 	mov.b	r15,	&0x0056	
+    80fe:	12 3c       	jmp	$+38     	;abs 0x8124
+    8100:	5f 42 fb 10 	mov.b	&0x10fb,r15	
+    8104:	c2 4f 57 00 	mov.b	r15,	&0x0057	
+    8108:	5f 42 fa 10 	mov.b	&0x10fa,r15	
+    810c:	c2 4f 56 00 	mov.b	r15,	&0x0056	
+    8110:	09 3c       	jmp	$+20     	;abs 0x8124
+    8112:	5f 42 f9 10 	mov.b	&0x10f9,r15	
+    8116:	c2 4f 57 00 	mov.b	r15,	&0x0057	
+    811a:	5f 42 f8 10 	mov.b	&0x10f8,r15	
+    811e:	c2 4f 56 00 	mov.b	r15,	&0x0056	
+    8122:	03 43       	nop			
+    8124:	5f 44 fd ff 	mov.b	-3(r4),	r15	;0xfffd(r4)
+    8128:	2f 93       	cmp	#2,	r15	;r3 As==10
+    812a:	0e 24       	jz	$+30     	;abs 0x8148
+    812c:	3f 90 03 00 	cmp	#3,	r15	;#0x0003
+    8130:	03 34       	jge	$+8      	;abs 0x8138
+    8132:	1f 93       	cmp	#1,	r15	;r3 As==01
+    8134:	06 24       	jz	$+14     	;abs 0x8142
+    8136:	12 3c       	jmp	$+38     	;abs 0x815c
+    8138:	2f 92       	cmp	#4,	r15	;r2 As==10
+    813a:	09 24       	jz	$+20     	;abs 0x814e
+    813c:	3f 92       	cmp	#8,	r15	;r2 As==11
+    813e:	0a 24       	jz	$+22     	;abs 0x8154
+    8140:	0d 3c       	jmp	$+28     	;abs 0x815c
+    8142:	c2 43 58 00 	mov.b	#0,	&0x0058	;r3 As==00
+    8146:	0a 3c       	jmp	$+22     	;abs 0x815c
+    8148:	e2 43 58 00 	mov.b	#2,	&0x0058	;r3 As==10
+    814c:	07 3c       	jmp	$+16     	;abs 0x815c
+    814e:	e2 42 58 00 	mov.b	#4,	&0x0058	;r2 As==10
+    8152:	04 3c       	jmp	$+10     	;abs 0x815c
+    8154:	f2 40 06 00 	mov.b	#6,	&0x0058	;#0x0006
+    8158:	58 00 
+    815a:	03 43       	nop			
+    815c:	5f 44 fc ff 	mov.b	-4(r4),	r15	;0xfffc(r4)
+    8160:	82 4f 00 02 	mov	r15,	&0x0200	
+    8164:	21 53       	incd	r1		
+    8166:	34 41       	pop	r4		
+    8168:	30 41       	ret			
+
+0000816a <set_mcu_speed_dco_mclk_1MHz_smclk_1MHz>:
+    816a:	04 12       	push	r4		
+    816c:	04 41       	mov	r1,	r4	
+    816e:	24 53       	incd	r4		
+    8170:	5e 43       	mov.b	#1,	r14	;r3 As==01
+    8172:	5f 43       	mov.b	#1,	r15	;r3 As==01
+    8174:	b0 12 aa 80 	call	#0x80aa	
+    8178:	34 41       	pop	r4		
+    817a:	30 41       	ret			
+
+0000817c <set_mcu_speed_dco_mclk_8MHz_smclk_8MHz>:
+    817c:	04 12       	push	r4		
+    817e:	04 41       	mov	r1,	r4	
+    8180:	24 53       	incd	r4		
+    8182:	5e 43       	mov.b	#1,	r14	;r3 As==01
+    8184:	7f 42       	mov.b	#8,	r15	;r2 As==11
+    8186:	b0 12 aa 80 	call	#0x80aa	
+    818a:	34 41       	pop	r4		
+    818c:	30 41       	ret			
+
+0000818e <set_mcu_speed_dco_mclk_8MHz_smclk_4MHz>:
+    818e:	04 12       	push	r4		
+    8190:	04 41       	mov	r1,	r4	
+    8192:	24 53       	incd	r4		
+    8194:	6e 43       	mov.b	#2,	r14	;r3 As==10
+    8196:	7f 42       	mov.b	#8,	r15	;r2 As==11
+    8198:	b0 12 aa 80 	call	#0x80aa	
+    819c:	34 41       	pop	r4		
+    819e:	30 41       	ret			
+
+000081a0 <set_mcu_speed_dco_mclk_8MHz_smclk_2MHz>:
+    81a0:	04 12       	push	r4		
+    81a2:	04 41       	mov	r1,	r4	
+    81a4:	24 53       	incd	r4		
+    81a6:	6e 42       	mov.b	#4,	r14	;r2 As==10
+    81a8:	7f 42       	mov.b	#8,	r15	;r2 As==11
+    81aa:	b0 12 aa 80 	call	#0x80aa	
+    81ae:	34 41       	pop	r4		
+    81b0:	30 41       	ret			
+
+000081b2 <set_mcu_speed_dco_mclk_8MHz_smclk_1MHz>:
+    81b2:	04 12       	push	r4		
+    81b4:	04 41       	mov	r1,	r4	
+    81b6:	24 53       	incd	r4		
+    81b8:	7e 42       	mov.b	#8,	r14	;r2 As==11
+    81ba:	7f 42       	mov.b	#8,	r15	;r2 As==11
+    81bc:	b0 12 aa 80 	call	#0x80aa	
+    81c0:	34 41       	pop	r4		
+    81c2:	30 41       	ret			
+
+000081c4 <set_mcu_speed_dco_mclk_12MHz_smclk_12MHz>:
+    81c4:	04 12       	push	r4		
+    81c6:	04 41       	mov	r1,	r4	
+    81c8:	24 53       	incd	r4		
+    81ca:	5e 43       	mov.b	#1,	r14	;r3 As==01
+    81cc:	7f 40 0c 00 	mov.b	#12,	r15	;#0x000c
+    81d0:	b0 12 aa 80 	call	#0x80aa	
+    81d4:	34 41       	pop	r4		
+    81d6:	30 41       	ret			
+
+000081d8 <set_mcu_speed_dco_mclk_12MHz_smclk_6MHz>:
+    81d8:	04 12       	push	r4		
+    81da:	04 41       	mov	r1,	r4	
+    81dc:	24 53       	incd	r4		
+    81de:	6e 43       	mov.b	#2,	r14	;r3 As==10
+    81e0:	7f 40 0c 00 	mov.b	#12,	r15	;#0x000c
+    81e4:	b0 12 aa 80 	call	#0x80aa	
+    81e8:	34 41       	pop	r4		
+    81ea:	30 41       	ret			
+
+000081ec <set_mcu_speed_dco_mclk_12MHz_smclk_3MHz>:
+    81ec:	04 12       	push	r4		
+    81ee:	04 41       	mov	r1,	r4	
+    81f0:	24 53       	incd	r4		
+    81f2:	6e 42       	mov.b	#4,	r14	;r2 As==10
+    81f4:	7f 40 0c 00 	mov.b	#12,	r15	;#0x000c
+    81f8:	b0 12 aa 80 	call	#0x80aa	
+    81fc:	34 41       	pop	r4		
+    81fe:	30 41       	ret			
+
+00008200 <set_mcu_speed_dco_mclk_12MHz_smclk_1_5MHz>:
+    8200:	04 12       	push	r4		
+    8202:	04 41       	mov	r1,	r4	
+    8204:	24 53       	incd	r4		
+    8206:	7e 42       	mov.b	#8,	r14	;r2 As==11
+    8208:	7f 40 0c 00 	mov.b	#12,	r15	;#0x000c
+    820c:	b0 12 aa 80 	call	#0x80aa	
+    8210:	34 41       	pop	r4		
+    8212:	30 41       	ret			
+
+00008214 <set_mcu_speed_dco_mclk_16MHz_smclk_16MHz>:
+    8214:	04 12       	push	r4		
+    8216:	04 41       	mov	r1,	r4	
+    8218:	24 53       	incd	r4		
+    821a:	5e 43       	mov.b	#1,	r14	;r3 As==01
+    821c:	7f 40 10 00 	mov.b	#16,	r15	;#0x0010
+    8220:	b0 12 aa 80 	call	#0x80aa	
+    8224:	34 41       	pop	r4		
+    8226:	30 41       	ret			
+
+00008228 <set_mcu_speed_dco_mclk_16MHz_smclk_8MHz>:
+    8228:	04 12       	push	r4		
+    822a:	04 41       	mov	r1,	r4	
+    822c:	24 53       	incd	r4		
+    822e:	6e 43       	mov.b	#2,	r14	;r3 As==10
+    8230:	7f 40 10 00 	mov.b	#16,	r15	;#0x0010
+    8234:	b0 12 aa 80 	call	#0x80aa	
+    8238:	34 41       	pop	r4		
+    823a:	30 41       	ret			
+
+0000823c <set_mcu_speed_dco_mclk_16MHz_smclk_4MHz>:
+    823c:	04 12       	push	r4		
+    823e:	04 41       	mov	r1,	r4	
+    8240:	24 53       	incd	r4		
+    8242:	6e 42       	mov.b	#4,	r14	;r2 As==10
+    8244:	7f 40 10 00 	mov.b	#16,	r15	;#0x0010
+    8248:	b0 12 aa 80 	call	#0x80aa	
+    824c:	34 41       	pop	r4		
+    824e:	30 41       	ret			
+
+00008250 <set_mcu_speed_dco_mclk_16MHz_smclk_2MHz>:
+    8250:	04 12       	push	r4		
+    8252:	04 41       	mov	r1,	r4	
+    8254:	24 53       	incd	r4		
+    8256:	7e 42       	mov.b	#8,	r14	;r2 As==11
+    8258:	7f 40 10 00 	mov.b	#16,	r15	;#0x0010
+    825c:	b0 12 aa 80 	call	#0x80aa	
+    8260:	34 41       	pop	r4		
+    8262:	30 41       	ret			
+
+00008264 <loop_4_cycles>:
+    8264:	04 12       	push	r4		
+    8266:	04 41       	mov	r1,	r4	
+    8268:	24 53       	incd	r4		
+    826a:	3e 53       	add	#-1,	r14	;r3 As==11
+    826c:	3f 63       	addc	#-1,	r15	;r3 As==11
+    826e:	fd 2f       	jc	$-4      	;abs 0x826a
+    8270:	34 41       	pop	r4		
+    8272:	30 41       	ret			
+
+00008274 <delay_usec>:
+    8274:	04 12       	push	r4		
+    8276:	04 41       	mov	r1,	r4	
+    8278:	24 53       	incd	r4		
+    827a:	31 50 fa ff 	add	#-6,	r1	;#0xfffa
+    827e:	84 4f fc ff 	mov	r15,	-4(r4)	;0xfffc(r4)
+    8282:	1f 42 00 02 	mov	&0x0200,r15	
+    8286:	3f 92       	cmp	#8,	r15	;r2 As==11
+    8288:	18 24       	jz	$+50     	;abs 0x82ba
+    828a:	3f 90 09 00 	cmp	#9,	r15	;#0x0009
+    828e:	03 2c       	jc	$+8      	;abs 0x8296
+    8290:	1f 93       	cmp	#1,	r15	;r3 As==01
+    8292:	08 24       	jz	$+18     	;abs 0x82a4
+    8294:	2d 3c       	jmp	$+92     	;abs 0x82f0
+    8296:	3f 90 0c 00 	cmp	#12,	r15	;#0x000c
+    829a:	17 24       	jz	$+48     	;abs 0x82ca
+    829c:	3f 90 10 00 	cmp	#16,	r15	;#0x0010
+    82a0:	1e 24       	jz	$+62     	;abs 0x82de
+    82a2:	26 3c       	jmp	$+78     	;abs 0x82f0
+    82a4:	1f 44 fc ff 	mov	-4(r4),	r15	;0xfffc(r4)
+    82a8:	12 c3       	clrc			
+    82aa:	0f 10       	rrc	r15		
+    82ac:	12 c3       	clrc			
+    82ae:	0f 10       	rrc	r15		
+    82b0:	84 4f f8 ff 	mov	r15,	-8(r4)	;0xfff8(r4)
+    82b4:	84 43 fa ff 	mov	#0,	-6(r4)	;r3 As==00, 0xfffa(r4)
+    82b8:	26 3c       	jmp	$+78     	;abs 0x8306
+    82ba:	1f 44 fc ff 	mov	-4(r4),	r15	;0xfffc(r4)
+    82be:	0f 5f       	rla	r15		
+    82c0:	84 4f f8 ff 	mov	r15,	-8(r4)	;0xfff8(r4)
+    82c4:	84 43 fa ff 	mov	#0,	-6(r4)	;r3 As==00, 0xfffa(r4)
+    82c8:	1e 3c       	jmp	$+62     	;abs 0x8306
+    82ca:	1e 44 fc ff 	mov	-4(r4),	r14	;0xfffc(r4)
+    82ce:	0f 4e       	mov	r14,	r15	
+    82d0:	0f 5f       	rla	r15		
+    82d2:	0f 5e       	add	r14,	r15	
+    82d4:	84 4f f8 ff 	mov	r15,	-8(r4)	;0xfff8(r4)
+    82d8:	84 43 fa ff 	mov	#0,	-6(r4)	;r3 As==00, 0xfffa(r4)
+    82dc:	14 3c       	jmp	$+42     	;abs 0x8306
+    82de:	1f 44 fc ff 	mov	-4(r4),	r15	;0xfffc(r4)
+    82e2:	0f 5f       	rla	r15		
+    82e4:	0f 5f       	rla	r15		
+    82e6:	84 4f f8 ff 	mov	r15,	-8(r4)	;0xfff8(r4)
+    82ea:	84 43 fa ff 	mov	#0,	-6(r4)	;r3 As==00, 0xfffa(r4)
+    82ee:	0b 3c       	jmp	$+24     	;abs 0x8306
+    82f0:	1f 44 fc ff 	mov	-4(r4),	r15	;0xfffc(r4)
+    82f4:	12 c3       	clrc			
+    82f6:	0f 10       	rrc	r15		
+    82f8:	12 c3       	clrc			
+    82fa:	0f 10       	rrc	r15		
+    82fc:	84 4f f8 ff 	mov	r15,	-8(r4)	;0xfff8(r4)
+    8300:	84 43 fa ff 	mov	#0,	-6(r4)	;r3 As==00, 0xfffa(r4)
+    8304:	03 43       	nop			
+    8306:	1e 44 f8 ff 	mov	-8(r4),	r14	;0xfff8(r4)
+    830a:	1f 44 fa ff 	mov	-6(r4),	r15	;0xfffa(r4)
+    830e:	b0 12 64 82 	call	#0x8264	
+    8312:	31 50 06 00 	add	#6,	r1	;#0x0006
+    8316:	34 41       	pop	r4		
+    8318:	30 41       	ret			
+
+0000831a <delay_ms>:
+    831a:	04 12       	push	r4		
+    831c:	04 41       	mov	r1,	r4	
+    831e:	24 53       	incd	r4		
+    8320:	31 82       	sub	#8,	r1	;r2 As==11
+    8322:	84 4f fc ff 	mov	r15,	-4(r4)	;0xfffc(r4)
+    8326:	1f 42 00 02 	mov	&0x0200,r15	
+    832a:	3f 92       	cmp	#8,	r15	;r2 As==11
+    832c:	13 24       	jz	$+40     	;abs 0x8354
+    832e:	3f 90 09 00 	cmp	#9,	r15	;#0x0009
+    8332:	03 2c       	jc	$+8      	;abs 0x833a
+    8334:	1f 93       	cmp	#1,	r15	;r3 As==01
+    8336:	08 24       	jz	$+18     	;abs 0x8348
+    8338:	1f 3c       	jmp	$+64     	;abs 0x8378
+    833a:	3f 90 0c 00 	cmp	#12,	r15	;#0x000c
+    833e:	10 24       	jz	$+34     	;abs 0x8360
+    8340:	3f 90 10 00 	cmp	#16,	r15	;#0x0010
+    8344:	13 24       	jz	$+40     	;abs 0x836c
+    8346:	18 3c       	jmp	$+50     	;abs 0x8378
+    8348:	b4 40 fa 00 	mov	#250,	-8(r4)	;#0x00fa, 0xfff8(r4)
+    834c:	f8 ff 
+    834e:	84 43 fa ff 	mov	#0,	-6(r4)	;r3 As==00, 0xfffa(r4)
+    8352:	18 3c       	jmp	$+50     	;abs 0x8384
+    8354:	b4 40 d0 07 	mov	#2000,	-8(r4)	;#0x07d0, 0xfff8(r4)
+    8358:	f8 ff 
+    835a:	84 43 fa ff 	mov	#0,	-6(r4)	;r3 As==00, 0xfffa(r4)
+    835e:	12 3c       	jmp	$+38     	;abs 0x8384
+    8360:	b4 40 b8 0b 	mov	#3000,	-8(r4)	;#0x0bb8, 0xfff8(r4)
+    8364:	f8 ff 
+    8366:	84 43 fa ff 	mov	#0,	-6(r4)	;r3 As==00, 0xfffa(r4)
+    836a:	0c 3c       	jmp	$+26     	;abs 0x8384
+    836c:	b4 40 a0 0f 	mov	#4000,	-8(r4)	;#0x0fa0, 0xfff8(r4)
+    8370:	f8 ff 
+    8372:	84 43 fa ff 	mov	#0,	-6(r4)	;r3 As==00, 0xfffa(r4)
+    8376:	06 3c       	jmp	$+14     	;abs 0x8384
+    8378:	b4 40 fa 00 	mov	#250,	-8(r4)	;#0x00fa, 0xfff8(r4)
+    837c:	f8 ff 
+    837e:	84 43 fa ff 	mov	#0,	-6(r4)	;r3 As==00, 0xfffa(r4)
+    8382:	03 43       	nop			
+    8384:	84 43 f6 ff 	mov	#0,	-10(r4)	;r3 As==00, 0xfff6(r4)
+    8388:	08 3c       	jmp	$+18     	;abs 0x839a
+    838a:	1e 44 f8 ff 	mov	-8(r4),	r14	;0xfff8(r4)
+    838e:	1f 44 fa ff 	mov	-6(r4),	r15	;0xfffa(r4)
+    8392:	b0 12 64 82 	call	#0x8264	
+    8396:	94 53 f6 ff 	inc	-10(r4)	;0xfff6(r4)
+    839a:	94 94 fc ff 	cmp	-4(r4),	-10(r4)	;0xfffc(r4), 0xfff6(r4)
+    839e:	f6 ff 
+    83a0:	f4 2b       	jnc	$-22     	;abs 0x838a
+    83a2:	31 52       	add	#8,	r1	;r2 As==11
+    83a4:	34 41       	pop	r4		
+    83a6:	30 41       	ret			
+
+000083a8 <led_green_off>:
+    83a8:	04 12       	push	r4		
+    83aa:	04 41       	mov	r1,	r4	
+    83ac:	24 53       	incd	r4		
+    83ae:	5f 42 21 00 	mov.b	&0x0021,r15	
+    83b2:	7f f0 fd ff 	and.b	#-3,	r15	;#0xfffd
+    83b6:	c2 4f 21 00 	mov.b	r15,	&0x0021	
+    83ba:	34 41       	pop	r4		
+    83bc:	30 41       	ret			
+
+000083be <led_green_on>:
+    83be:	04 12       	push	r4		
+    83c0:	04 41       	mov	r1,	r4	
+    83c2:	24 53       	incd	r4		
+    83c4:	5f 42 21 00 	mov.b	&0x0021,r15	
+    83c8:	6f d3       	bis.b	#2,	r15	;r3 As==10
+    83ca:	c2 4f 21 00 	mov.b	r15,	&0x0021	
+    83ce:	34 41       	pop	r4		
+    83d0:	30 41       	ret			
+
+000083d2 <led_green_switch>:
+    83d2:	04 12       	push	r4		
+    83d4:	04 41       	mov	r1,	r4	
+    83d6:	24 53       	incd	r4		
+    83d8:	5f 42 21 00 	mov.b	&0x0021,r15	
+    83dc:	6f e3       	xor.b	#2,	r15	;r3 As==10
+    83de:	c2 4f 21 00 	mov.b	r15,	&0x0021	
+    83e2:	34 41       	pop	r4		
+    83e4:	30 41       	ret			
+
+000083e6 <led_red_off>:
+    83e6:	04 12       	push	r4		
+    83e8:	04 41       	mov	r1,	r4	
+    83ea:	24 53       	incd	r4		
+    83ec:	5f 42 21 00 	mov.b	&0x0021,r15	
+    83f0:	7f f0 fe ff 	and.b	#-2,	r15	;#0xfffe
+    83f4:	c2 4f 21 00 	mov.b	r15,	&0x0021	
+    83f8:	34 41       	pop	r4		
+    83fa:	30 41       	ret			
+
+000083fc <led_red_on>:
+    83fc:	04 12       	push	r4		
+    83fe:	04 41       	mov	r1,	r4	
+    8400:	24 53       	incd	r4		
+    8402:	5f 42 21 00 	mov.b	&0x0021,r15	
+    8406:	5f d3       	bis.b	#1,	r15	;r3 As==01
+    8408:	c2 4f 21 00 	mov.b	r15,	&0x0021	
+    840c:	34 41       	pop	r4		
+    840e:	30 41       	ret			
+
+00008410 <led_red_switch>:
+    8410:	04 12       	push	r4		
+    8412:	04 41       	mov	r1,	r4	
+    8414:	24 53       	incd	r4		
+    8416:	5f 42 21 00 	mov.b	&0x0021,r15	
+    841a:	5f e3       	xor.b	#1,	r15	;r3 As==01
+    841c:	c2 4f 21 00 	mov.b	r15,	&0x0021	
+    8420:	34 41       	pop	r4		
+    8422:	30 41       	ret			
+
+00008424 <leds_off>:
+    8424:	04 12       	push	r4		
+    8426:	04 41       	mov	r1,	r4	
+    8428:	24 53       	incd	r4		
+    842a:	5f 42 21 00 	mov.b	&0x0021,r15	
+    842e:	7f f0 fc ff 	and.b	#-4,	r15	;#0xfffc
+    8432:	c2 4f 21 00 	mov.b	r15,	&0x0021	
+    8436:	34 41       	pop	r4		
+    8438:	30 41       	ret			
+
+0000843a <leds_on>:
+    843a:	04 12       	push	r4		
+    843c:	04 41       	mov	r1,	r4	
+    843e:	24 53       	incd	r4		
+    8440:	5f 42 21 00 	mov.b	&0x0021,r15	
+    8444:	7f d0 03 00 	bis.b	#3,	r15	;#0x0003
+    8448:	c2 4f 21 00 	mov.b	r15,	&0x0021	
+    844c:	34 41       	pop	r4		
+    844e:	30 41       	ret			
+
+00008450 <leds_init>:
+    8450:	04 12       	push	r4		
+    8452:	04 41       	mov	r1,	r4	
+    8454:	24 53       	incd	r4		
+    8456:	5f 42 21 00 	mov.b	&0x0021,r15	
+    845a:	7f f0 fc ff 	and.b	#-4,	r15	;#0xfffc
+    845e:	c2 4f 21 00 	mov.b	r15,	&0x0021	
+    8462:	5f 42 22 00 	mov.b	&0x0022,r15	
+    8466:	7f d0 03 00 	bis.b	#3,	r15	;#0x0003
+    846a:	c2 4f 22 00 	mov.b	r15,	&0x0022	
+    846e:	5f 42 26 00 	mov.b	&0x0026,r15	
+    8472:	7f f0 fc ff 	and.b	#-4,	r15	;#0xfffc
+    8476:	c2 4f 26 00 	mov.b	r15,	&0x0026	
+    847a:	b0 12 24 84 	call	#0x8424	
+    847e:	34 41       	pop	r4		
+    8480:	30 41       	ret			
+
+00008482 <uart_init>:
+    8482:	04 12       	push	r4		
+    8484:	04 41       	mov	r1,	r4	
+    8486:	24 53       	incd	r4		
+    8488:	21 83       	decd	r1		
+    848a:	84 4f fc ff 	mov	r15,	-4(r4)	;0xfffc(r4)
+    848e:	5f 42 1b 00 	mov.b	&0x001b,r15	
+    8492:	7f d0 30 00 	bis.b	#48,	r15	;#0x0030
+    8496:	c2 4f 1b 00 	mov.b	r15,	&0x001b	
+    849a:	5f 42 1a 00 	mov.b	&0x001a,r15	
+    849e:	7f d0 10 00 	bis.b	#16,	r15	;#0x0010
+    84a2:	c2 4f 1a 00 	mov.b	r15,	&0x001a	
+    84a6:	5f 42 1a 00 	mov.b	&0x001a,r15	
+    84aa:	7f f0 df ff 	and.b	#-33,	r15	;#0xffdf
+    84ae:	c2 4f 1a 00 	mov.b	r15,	&0x001a	
+    84b2:	1f 44 fc ff 	mov	-4(r4),	r15	;0xfffc(r4)
+    84b6:	1f 93       	cmp	#1,	r15	;r3 As==01
+    84b8:	03 24       	jz	$+8      	;abs 0x84c0
+    84ba:	3f 92       	cmp	#8,	r15	;r2 As==11
+    84bc:	12 24       	jz	$+38     	;abs 0x84e2
+    84be:	23 3c       	jmp	$+72     	;abs 0x8506
+    84c0:	f2 40 80 ff 	mov.b	#-128,	&0x0061	;#0xff80
+    84c4:	61 00 
+    84c6:	f2 40 68 00 	mov.b	#104,	&0x0062	;#0x0068
+    84ca:	62 00 
+    84cc:	c2 43 63 00 	mov.b	#0,	&0x0063	;r3 As==00
+    84d0:	e2 42 64 00 	mov.b	#4,	&0x0064	;r2 As==10
+    84d4:	5f 42 61 00 	mov.b	&0x0061,r15	
+    84d8:	7f f0 fe ff 	and.b	#-2,	r15	;#0xfffe
+    84dc:	c2 4f 61 00 	mov.b	r15,	&0x0061	
+    84e0:	13 3c       	jmp	$+40     	;abs 0x8508
+    84e2:	f2 40 80 ff 	mov.b	#-128,	&0x0061	;#0xff80
+    84e6:	61 00 
+    84e8:	f2 40 41 00 	mov.b	#65,	&0x0062	;#0x0041
+    84ec:	62 00 
+    84ee:	f2 40 03 00 	mov.b	#3,	&0x0063	;#0x0003
+    84f2:	63 00 
+    84f4:	e2 42 64 00 	mov.b	#4,	&0x0064	;r2 As==10
+    84f8:	5f 42 61 00 	mov.b	&0x0061,r15	
+    84fc:	7f f0 fe ff 	and.b	#-2,	r15	;#0xfffe
+    8500:	c2 4f 61 00 	mov.b	r15,	&0x0061	
+    8504:	01 3c       	jmp	$+4      	;abs 0x8508
+    8506:	03 43       	nop			
+    8508:	82 43 02 02 	mov	#0,	&0x0202	;r3 As==00
+    850c:	21 53       	incd	r1		
+    850e:	34 41       	pop	r4		
+    8510:	30 41       	ret			
+
+00008512 <uart_stop>:
+    8512:	04 12       	push	r4		
+    8514:	04 41       	mov	r1,	r4	
+    8516:	24 53       	incd	r4		
+    8518:	34 41       	pop	r4		
+    851a:	30 41       	ret			
+
+0000851c <putchar>:
+    851c:	04 12       	push	r4		
+    851e:	04 41       	mov	r1,	r4	
+    8520:	24 53       	incd	r4		
+    8522:	21 83       	decd	r1		
+    8524:	84 4f fc ff 	mov	r15,	-4(r4)	;0xfffc(r4)
+    8528:	1f 44 fc ff 	mov	-4(r4),	r15	;0xfffc(r4)
+    852c:	4f 4f       	mov.b	r15,	r15	
+    852e:	c2 4f 67 00 	mov.b	r15,	&0x0067	
+    8532:	03 43       	nop			
+    8534:	5f 42 03 00 	mov.b	&0x0003,r15	
+    8538:	4f 4f       	mov.b	r15,	r15	
+    853a:	2f f3       	and	#2,	r15	;r3 As==10
+    853c:	0f 93       	tst	r15		
+    853e:	fa 27       	jz	$-10     	;abs 0x8534
+    8540:	1f 44 fc ff 	mov	-4(r4),	r15	;0xfffc(r4)
+    8544:	4f 4f       	mov.b	r15,	r15	
+    8546:	4f 4f       	mov.b	r15,	r15	
+    8548:	21 53       	incd	r1		
+    854a:	34 41       	pop	r4		
+    854c:	30 41       	ret			
+
+0000854e <uart_getchar>:
+    854e:	04 12       	push	r4		
+    8550:	04 41       	mov	r1,	r4	
+    8552:	24 53       	incd	r4		
+    8554:	21 83       	decd	r1		
+    8556:	5f 42 66 00 	mov.b	&0x0066,r15	
+    855a:	c4 4f fc ff 	mov.b	r15,	-4(r4)	;0xfffc(r4)
+    855e:	c4 43 fd ff 	mov.b	#0,	-3(r4)	;r3 As==00, 0xfffd(r4)
+    8562:	1f 44 fc ff 	mov	-4(r4),	r15	;0xfffc(r4)
+    8566:	21 53       	incd	r1		
+    8568:	34 41       	pop	r4		
+    856a:	30 41       	ret			
+
+0000856c <uart_eint>:
+    856c:	04 12       	push	r4		
+    856e:	04 41       	mov	r1,	r4	
+    8570:	24 53       	incd	r4		
+    8572:	5f 42 01 00 	mov.b	&0x0001,r15	
+    8576:	5f d3       	bis.b	#1,	r15	;r3 As==01
+    8578:	c2 4f 01 00 	mov.b	r15,	&0x0001	
+    857c:	34 41       	pop	r4		
+    857e:	30 41       	ret			
+
+00008580 <uart_dint>:
+    8580:	04 12       	push	r4		
+    8582:	04 41       	mov	r1,	r4	
+    8584:	24 53       	incd	r4		
+    8586:	5f 42 01 00 	mov.b	&0x0001,r15	
+    858a:	7f f0 fe ff 	and.b	#-2,	r15	;#0xfffe
+    858e:	c2 4f 01 00 	mov.b	r15,	&0x0001	
+    8592:	34 41       	pop	r4		
+    8594:	30 41       	ret			
+
+00008596 <uart_register_cb>:
+    8596:	04 12       	push	r4		
+    8598:	04 41       	mov	r1,	r4	
+    859a:	24 53       	incd	r4		
+    859c:	21 83       	decd	r1		
+    859e:	84 4f fc ff 	mov	r15,	-4(r4)	;0xfffc(r4)
+    85a2:	92 44 fc ff 	mov	-4(r4),	&0x0202	;0xfffc(r4)
+    85a6:	02 02 
+    85a8:	84 93 fc ff 	tst	-4(r4)		;0xfffc(r4)
+    85ac:	03 20       	jnz	$+8      	;abs 0x85b4
+    85ae:	b0 12 80 85 	call	#0x8580	
+    85b2:	02 3c       	jmp	$+6      	;abs 0x85b8
+    85b4:	b0 12 6c 85 	call	#0x856c	
+    85b8:	21 53       	incd	r1		
+    85ba:	34 41       	pop	r4		
+    85bc:	30 41       	ret			
+
+000085be <usart0irq>:
+    85be:	0f 12       	push	r15		
+    85c0:	0e 12       	push	r14		
+    85c2:	0d 12       	push	r13		
+    85c4:	0c 12       	push	r12		
+    85c6:	04 12       	push	r4		
+    85c8:	04 41       	mov	r1,	r4	
+    85ca:	34 50 0a 00 	add	#10,	r4	;#0x000a
+    85ce:	21 83       	decd	r1		
+    85d0:	5f 42 65 00 	mov.b	&0x0065,r15	
+    85d4:	4f 4f       	mov.b	r15,	r15	
+    85d6:	2f f2       	and	#4,	r15	;r2 As==10
+    85d8:	0f 93       	tst	r15		
+    85da:	0a 24       	jz	$+22     	;abs 0x85f0
+    85dc:	5f 42 66 00 	mov.b	&0x0066,r15	
+    85e0:	c4 4f f4 ff 	mov.b	r15,	-12(r4)	;0xfff4(r4)
+    85e4:	5f 44 f4 ff 	mov.b	-12(r4),r15	;0xfff4(r4)
+    85e8:	5f 53       	inc.b	r15		
+    85ea:	c4 4f f4 ff 	mov.b	r15,	-12(r4)	;0xfff4(r4)
+    85ee:	0a 3c       	jmp	$+22     	;abs 0x8604
+    85f0:	1e 42 02 02 	mov	&0x0202,r14	
+    85f4:	5f 42 66 00 	mov.b	&0x0066,r15	
+    85f8:	8e 12       	call	r14		
+    85fa:	0f 93       	tst	r15		
+    85fc:	03 24       	jz	$+8      	;abs 0x8604
+    85fe:	b4 c0 f0 00 	bic	#240,	0(r4)	;#0x00f0, 0x0000(r4)
+    8602:	00 00 
+    8604:	21 53       	incd	r1		
+    8606:	34 41       	pop	r4		
+    8608:	3c 41       	pop	r12		
+    860a:	3d 41       	pop	r13		
+    860c:	3e 41       	pop	r14		
+    860e:	3f 41       	pop	r15		
+    8610:	00 13       	reti			
+
+00008612 <button_init>:
+    8612:	04 12       	push	r4		
+    8614:	04 41       	mov	r1,	r4	
+    8616:	24 53       	incd	r4		
+    8618:	82 43 04 02 	mov	#0,	&0x0204	;r3 As==00
+    861c:	5f 42 26 00 	mov.b	&0x0026,r15	
+    8620:	7f f0 fb ff 	and.b	#-5,	r15	;#0xfffb
+    8624:	c2 4f 26 00 	mov.b	r15,	&0x0026	
+    8628:	5f 42 22 00 	mov.b	&0x0022,r15	
+    862c:	7f f0 fb ff 	and.b	#-5,	r15	;#0xfffb
+    8630:	c2 4f 22 00 	mov.b	r15,	&0x0022	
+    8634:	5f 42 25 00 	mov.b	&0x0025,r15	
+    8638:	7f f0 fb ff 	and.b	#-5,	r15	;#0xfffb
+    863c:	c2 4f 25 00 	mov.b	r15,	&0x0025	
+    8640:	5f 42 24 00 	mov.b	&0x0024,r15	
+    8644:	6f d2       	bis.b	#4,	r15	;r2 As==10
+    8646:	c2 4f 24 00 	mov.b	r15,	&0x0024	
+    864a:	5f 42 23 00 	mov.b	&0x0023,r15	
+    864e:	7f f0 fb ff 	and.b	#-5,	r15	;#0xfffb
+    8652:	c2 4f 23 00 	mov.b	r15,	&0x0023	
+    8656:	5f 42 27 00 	mov.b	&0x0027,r15	
+    865a:	6f d2       	bis.b	#4,	r15	;r2 As==10
+    865c:	c2 4f 27 00 	mov.b	r15,	&0x0027	
+    8660:	5f 42 21 00 	mov.b	&0x0021,r15	
+    8664:	6f d2       	bis.b	#4,	r15	;r2 As==10
+    8666:	c2 4f 21 00 	mov.b	r15,	&0x0021	
+    866a:	34 41       	pop	r4		
+    866c:	30 41       	ret			
+
+0000866e <button_stop>:
+    866e:	04 12       	push	r4		
+    8670:	04 41       	mov	r1,	r4	
+    8672:	24 53       	incd	r4		
+    8674:	5f 42 26 00 	mov.b	&0x0026,r15	
+    8678:	7f f0 fb ff 	and.b	#-5,	r15	;#0xfffb
+    867c:	c2 4f 26 00 	mov.b	r15,	&0x0026	
+    8680:	5f 42 22 00 	mov.b	&0x0022,r15	
+    8684:	7f f0 fb ff 	and.b	#-5,	r15	;#0xfffb
+    8688:	c2 4f 22 00 	mov.b	r15,	&0x0022	
+    868c:	5f 42 25 00 	mov.b	&0x0025,r15	
+    8690:	7f f0 fb ff 	and.b	#-5,	r15	;#0xfffb
+    8694:	c2 4f 25 00 	mov.b	r15,	&0x0025	
+    8698:	5f 42 23 00 	mov.b	&0x0023,r15	
+    869c:	7f f0 fb ff 	and.b	#-5,	r15	;#0xfffb
+    86a0:	c2 4f 23 00 	mov.b	r15,	&0x0023	
+    86a4:	5f 42 27 00 	mov.b	&0x0027,r15	
+    86a8:	7f f0 fb ff 	and.b	#-5,	r15	;#0xfffb
+    86ac:	c2 4f 27 00 	mov.b	r15,	&0x0027	
+    86b0:	34 41       	pop	r4		
+    86b2:	30 41       	ret			
+
+000086b4 <button_is_pressed>:
+    86b4:	04 12       	push	r4		
+    86b6:	04 41       	mov	r1,	r4	
+    86b8:	24 53       	incd	r4		
+    86ba:	5f 42 20 00 	mov.b	&0x0020,r15	
+    86be:	4f 4f       	mov.b	r15,	r15	
+    86c0:	0e 4f       	mov	r15,	r14	
+    86c2:	2e f2       	and	#4,	r14	;r2 As==10
+    86c4:	1f 43       	mov	#1,	r15	;r3 As==01
+    86c6:	0e 93       	tst	r14		
+    86c8:	01 24       	jz	$+4      	;abs 0x86cc
+    86ca:	0f 43       	clr	r15		
+    86cc:	34 41       	pop	r4		
+    86ce:	30 41       	ret			
+
+000086d0 <button_register_cb>:
+    86d0:	04 12       	push	r4		
+    86d2:	04 41       	mov	r1,	r4	
+    86d4:	24 53       	incd	r4		
+    86d6:	21 83       	decd	r1		
+    86d8:	84 4f fc ff 	mov	r15,	-4(r4)	;0xfffc(r4)
+    86dc:	92 44 fc ff 	mov	-4(r4),	&0x0204	;0xfffc(r4)
+    86e0:	04 02 
+    86e2:	21 53       	incd	r1		
+    86e4:	34 41       	pop	r4		
+    86e6:	30 41       	ret			
+
+000086e8 <button_enable_interrupt>:
+    86e8:	04 12       	push	r4		
+    86ea:	04 41       	mov	r1,	r4	
+    86ec:	24 53       	incd	r4		
+    86ee:	5f 42 25 00 	mov.b	&0x0025,r15	
+    86f2:	6f d2       	bis.b	#4,	r15	;r2 As==10
+    86f4:	c2 4f 25 00 	mov.b	r15,	&0x0025	
+    86f8:	34 41       	pop	r4		
+    86fa:	30 41       	ret			
+
+000086fc <button_disable_interrupt>:
+    86fc:	04 12       	push	r4		
+    86fe:	04 41       	mov	r1,	r4	
+    8700:	24 53       	incd	r4		
+    8702:	5f 42 25 00 	mov.b	&0x0025,r15	
+    8706:	7f f0 fb ff 	and.b	#-5,	r15	;#0xfffb
+    870a:	c2 4f 25 00 	mov.b	r15,	&0x0025	
+    870e:	34 41       	pop	r4		
+    8710:	30 41       	ret			
+
+00008712 <port1_irq_handler>:
+    8712:	0f 12       	push	r15		
+    8714:	0e 12       	push	r14		
+    8716:	0d 12       	push	r13		
+    8718:	0c 12       	push	r12		
+    871a:	04 12       	push	r4		
+    871c:	04 41       	mov	r1,	r4	
+    871e:	34 50 0a 00 	add	#10,	r4	;#0x000a
+    8722:	5f 42 23 00 	mov.b	&0x0023,r15	
+    8726:	4f 4f       	mov.b	r15,	r15	
+    8728:	5e 42 25 00 	mov.b	&0x0025,r14	
+    872c:	4e 4e       	mov.b	r14,	r14	
+    872e:	2e f2       	and	#4,	r14	;r2 As==10
+    8730:	0f fe       	and	r14,	r15	
+    8732:	0f 93       	tst	r15		
+    8734:	07 24       	jz	$+16     	;abs 0x8744
+    8736:	1f 42 04 02 	mov	&0x0204,r15	
+    873a:	0f 93       	tst	r15		
+    873c:	03 24       	jz	$+8      	;abs 0x8744
+    873e:	1f 42 04 02 	mov	&0x0204,r15	
+    8742:	8f 12       	call	r15		
+    8744:	c2 43 23 00 	mov.b	#0,	&0x0023	;r3 As==00
+    8748:	34 41       	pop	r4		
+    874a:	3c 41       	pop	r12		
+    874c:	3d 41       	pop	r13		
+    874e:	3e 41       	pop	r14		
+    8750:	3f 41       	pop	r15		
+    8752:	00 13       	reti			
+
+00008754 <watchdog_stop>:
+    8754:	04 12       	push	r4		
+    8756:	04 41       	mov	r1,	r4	
+    8758:	24 53       	incd	r4		
+    875a:	1f 42 20 01 	mov	&0x0120,r15	
+    875e:	3f f0 ff 00 	and	#255,	r15	;#0x00ff
+    8762:	82 4f 06 02 	mov	r15,	&0x0206	
+    8766:	b2 40 80 5a 	mov	#23168,	&0x0120	;#0x5a80
+    876a:	20 01 
+    876c:	34 41       	pop	r4		
+    876e:	30 41       	ret			
+
+00008770 <watchdog_restore>:
+    8770:	04 12       	push	r4		
+    8772:	04 41       	mov	r1,	r4	
+    8774:	24 53       	incd	r4		
+    8776:	1f 42 06 02 	mov	&0x0206,r15	
+    877a:	3f d0 00 5a 	bis	#23040,	r15	;#0x5a00
+    877e:	82 4f 20 01 	mov	r15,	&0x0120	
+    8782:	34 41       	pop	r4		
+    8784:	30 41       	ret			
+
+00008786 <puts>:
+    8786:	0b 12       	push	r11		
+    8788:	0b 4f       	mov	r15,	r11	
+    878a:	6f 4b       	mov.b	@r11,	r15	
+    878c:	4f 93       	tst.b	r15		
+    878e:	06 24       	jz	$+14     	;abs 0x879c
+    8790:	1b 53       	inc	r11		
+    8792:	8f 11       	sxt	r15		
+    8794:	b0 12 1c 85 	call	#0x851c	
+    8798:	0f 93       	tst	r15		
+    879a:	f7 37       	jge	$-16     	;abs 0x878a
+    879c:	cb 93 00 00 	tst.b	0(r11)		;0x0000(r11)
+    87a0:	05 20       	jnz	$+12     	;abs 0x87ac
+    87a2:	3f 40 0a 00 	mov	#10,	r15	;#0x000a
+    87a6:	b0 12 1c 85 	call	#0x851c	
+    87aa:	01 3c       	jmp	$+4      	;abs 0x87ae
+    87ac:	3f 43       	mov	#-1,	r15	;r3 As==11
+    87ae:	3b 41       	pop	r11		
+    87b0:	30 41       	ret			
+
+000087b2 <_unexpected_>:
+    87b2:	00 13       	reti			
+
+Disassembly of section .vectors:
+
+0000ffe0 <__ivtbl_16>:
+    ffe0:	82 80 82 80 12 87 82 80 82 80 82 80 82 80 be 85     ................
+    fff0:	82 80 82 80 82 80 82 80 82 80 82 80 82 80 00 80     ................
