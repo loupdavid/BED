@@ -1,6 +1,6 @@
-NAME		= serial
+NAME		= application
 LIBS		= -lez430
-SRC		= main.c
+SRC		= main_client.c
 SRC_DIR		= src
 INC_DIR		= -I../../inc
 OUT_DIR		= bin
