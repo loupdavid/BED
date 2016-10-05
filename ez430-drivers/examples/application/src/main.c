@@ -18,6 +18,7 @@
 #endif
 
 #include <stdio.h>
+#include <string.h>
 
 #include "leds.h"
 #include "clock.h"
@@ -90,11 +91,22 @@ int serial_cb(unsigned char data)
   return 1; /* will wakeup from LPMx */
 }
 
+void execcmd(char cmd[]){
+  
+  if(strcmp(cmd, "test") == 0){
+    printf("\nhello world\n");
+  }
+  else{
+    printf("\nCommande inconnue\n");
+  }
+}
+
 int main(void)
 {
   uint8_t data;
   char cmd[CMD_SIZE];
   int i=0;
+  int j;
   watchdog_stop();
 
   set_mcu_speed_dco_mclk_16MHz_smclk_8MHz();
@@ -116,16 +128,19 @@ int main(void)
     LPM(1);
     if (serial_ring_get(&data))
     {
-      if(data != '\r'){
+      if(data != '\r' && i<CMD_SIZE-1){
         putchar(data);
         cmd[i]=data;
+        i++;
       }
       else{
-        // Envoyer sur radio
-        cmd[i]=data;
-        cmd[i+1] = '\0';
+        cmd[i]='\0';
+        execcmd(&cmd);
+        // Reset cmd
+        for(j=0;j<CMD_SIZE;j++){
+          cmd[j]=NULL;
+        }
         i=0;
-        printf("\nCommande : %s \n",cmd);
       }
       led_green_switch();
     }
@@ -134,7 +149,6 @@ int main(void)
       printf("\n\n serial_ring_get() returns 0 : empty ring\n\n");
       led_red_switch();
     }
-    i++;
   }
 }
 
